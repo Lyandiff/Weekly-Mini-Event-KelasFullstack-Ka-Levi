@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 (Weekly Mini Event kak Levi KelasFullstack.id)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --profile-pict: url("https://avatars.githubusercontent.com/u/121371698?v=4");
+        --github-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDUuNjIzLDMuODcyLDEwLjMyOCw5LjA5MiwxMS42M0MxMi4wMzYsMjYuNDY4LDEyLDI2LjI4LDEyLDI2LjA0N3YtMi4wNTEgYy0wLjQ4NywwLTEuMzAzLDAtMS41MDgsMGMtMC44MjEsMC0xLjU1MS0wLjM1My0xLjkwNS0xLjAwOWMtMC4zOTMtMC43MjktMC40NjEtMS44NDQtMS40MzUtMi41MjYgYy0wLjI4OS0wLjIyNy0wLjA2OS0wLjQ4NiwwLjI2NC0wLjQ1MWMwLjYxNSwwLjE3NCwxLjEyNSwwLjU5NiwxLjYwNSwxLjIyMmMwLjQ3OCwwLjYyNywwLjcwMywwLjc2OSwxLjU5NiwwLjc2OSBjMC40MzMsMCwxLjA4MS0wLjAyNSwxLjY5MS0wLjEyMWMwLjMyOC0wLjgzMywwLjg5NS0xLjYsMS41ODgtMS45NjJjLTMuOTk2LTAuNDExLTUuOTAzLTIuMzk5LTUuOTAzLTUuMDk4IGMwLTEuMTYyLDAuNDk1LTIuMjg2LDEuMzM2LTMuMjMzQzkuMDUzLDEwLjY0Nyw4LjcwNiw4LjczLDkuNDM1LDhjMS43OTgsMCwyLjg4NSwxLjE2NiwzLjE0NiwxLjQ4MUMxMy40NzcsOS4xNzQsMTQuNDYxLDksMTUuNDk1LDkgYzEuMDM2LDAsMi4wMjQsMC4xNzQsMi45MjIsMC40ODNDMTguNjc1LDkuMTcsMTkuNzYzLDgsMjEuNTY1LDhjMC43MzIsMC43MzEsMC4zODEsMi42NTYsMC4xMDIsMy41OTQgYzAuODM2LDAuOTQ1LDEuMzI4LDIuMDY2LDEuMzI4LDMuMjI2YzAsMi42OTctMS45MDQsNC42ODQtNS44OTQsNS4wOTdDMTguMTk5LDIwLjQ5LDE5LDIyLjEsMTksMjMuMzEzdjIuNzM0IGMwLDAuMTA0LTAuMDIzLDAuMTc5LTAuMDM1LDAuMjY4QzIzLjY0MSwyNC42NzYsMjcsMjAuMjM2LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg==");
+        --facebook-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CiAgICA8cGF0aCBkPSJNMjUsM0MxMi44NSwzLDMsMTIuODUsMywyNWMwLDExLjAzLDguMTI1LDIwLjEzNywxOC43MTIsMjEuNzI4VjMwLjgzMWgtNS40NDN2LTUuNzgzaDUuNDQzdi0zLjg0OCBjMC02LjM3MSwzLjEwNC05LjE2OCw4LjM5OS05LjE2OGMyLjUzNiwwLDMuODc3LDAuMTg4LDQuNTEyLDAuMjc0djUuMDQ4aC0zLjYxMmMtMi4yNDgsMC0zLjAzMywyLjEzMS0zLjAzMyw0LjUzM3YzLjE2MWg2LjU4OCBsLTAuODk0LDUuNzgzaC01LjY5NHYxNS45NDRDMzguNzE2LDQ1LjMxOCw0NywzNi4xMzcsNDcsMjVDNDcsMTIuODUsMzcuMTUsMywyNSwzeiI+PC9wYXRoPgo8L3N2Zz4=");
+        --twitter-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CjxwYXRoIGQ9Ik0gMTEgNCBDIDcuMTM0IDQgNCA3LjEzNCA0IDExIEwgNCAzOSBDIDQgNDIuODY2IDcuMTM0IDQ2IDExIDQ2IEwgMzkgNDYgQyA0Mi44NjYgNDYgNDYgNDIuODY2IDQ2IDM5IEwgNDYgMTEgQyA0NiA3LjEzNCA0Mi44NjYgNCAzOSA0IEwgMTEgNCB6IE0gMTMuMDg1OTM4IDEzIEwgMjEuMDIzNDM4IDEzIEwgMjYuNjYwMTU2IDIxLjAwOTc2NiBMIDMzLjUgMTMgTCAzNiAxMyBMIDI3Ljc4OTA2MiAyMi42MTMyODEgTCAzNy45MTQwNjIgMzcgTCAyOS45Nzg1MTYgMzcgTCAyMy40Mzc1IDI3LjcwNzAzMSBMIDE1LjUgMzcgTCAxMyAzNyBMIDIyLjMwODU5NCAyNi4xMDM1MTYgTCAxMy4wODU5MzggMTMgeiBNIDE2LjkxNDA2MiAxNSBMIDMxLjAyMTQ4NCAzNSBMIDM0LjA4NTkzOCAzNSBMIDE5Ljk3ODUxNiAxNSBMIDE2LjkxNDA2MiAxNSB6Ij48L3BhdGg+Cjwvc3ZnPg==");
+        --body-bakground: #3c3c3c;
+        --wrapper-background: #fff6dc;
+        --social-background: #ffe382;
+        --social-border: #ffc6ac;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: var(--body-bakground);
+      }
+      .wrapper > h1 {
+        font-weight: 600;
+        font-size: min(7.5vh, 10vw);
+        text-align: center;
+      }
+      .wrapper > p {
+        font-size: min(3vh, 4vw);
+        font-weight: 400;
+        padding-bottom: min(3.75vh, 5vw);
+        padding-right: min(9vh, 12vw);
+        padding-left: min(9vh, 12vw);
+        text-align: center;
+      }
+      .wrapper {
+        width: min(72vh, 96vw);
+        height: min(96vh, 128vw);
+        background-color: var(--wrapper-background);
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .profile-picture {
+        background-image: var(--profile-pict);
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 min(3.75vh, 5vw) var(--body-bakground);
+        width: min(36vh, 48vw);
+        height: min(36vh, 48vw);
+      }
+      .social-media {
+        padding: min(1.5vh, 2vw);
+        background-color: var(--social-background);
+        border: min(1.5vh, 2vw) solid var(--social-border);
+      }
+      .social-media > h2 {
+        font-size: min(3.75vh, 5vw);
+        font-weight: 500;
+        text-align: center;
+      }
+      .social-media > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .social-media > div > a {
+        background-size: cover;
+        width: min(7.5vh, 10vw);
+        height: min(7.5vh, 10vw);
+      }
+      .github-icon {
+        background-image: var(--github-icon);
+      }
+      .facebook-icon {
+        background-image: var(--facebook-icon);
+      }
+      .twitter-icon {
+        background-image: var(--twitter-icon);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="profile-picture"></div>
+      <h1 class="porfile-name">Lyandiff</h1>
+      <p class="profile-about">
+        Hello! I'm a Enthusiast Web Developer and I Love to Code Beautiful
+        Website
+      </p>
+      <div class="social-media">
+        <h2>Follow My Social Media :)</h2>
+        <div class="social-icons">
+          <a
+            href="https://github.com/Lyandiff/Weekly-Mini-Event-KelasFullstack-Ka-Levi"
+            target="_blank"
+            class="social-icon github-icon"
+          ></a>
+          <a
+            href="https://twitter.com/?lang=id"
+            target="_blank"
+            class="social-icon twitter-icon"
+          ></a>
+          <a
+            href="https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr"
+            target="_blank"
+            class="social-icon facebook-icon"
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
