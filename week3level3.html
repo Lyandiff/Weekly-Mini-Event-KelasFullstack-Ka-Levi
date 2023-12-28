@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Weekly Mini Event KelasFullstack Minggu ke-3 Tingkat Kesulitan Level 3"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="canonical"
+      href="https://lyandiff.github.io/Weekly-Mini-Event-KelasFullstack-Ka-Levi/week3level3.html"
+    />
+    <meta
+      property="og:title"
+      content="Week 3 Level 3 (Weekly Mini Event kak Levi KelasFullstack.id)"
+    />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:description"
+      content="Weekly Mini Event KelasFullstack Minggu ke-3 Tingkat Kesulitan Level 3"
+    />
+    <meta property="og:image" content="https://i.ibb.co/WtSYn7x/preview2.png" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="360" />
+    <meta property="og:image:alt" content="Week 3 Level 3" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:url"
+      content="https://lyandiff.github.io/Weekly-Mini-Event-KelasFullstack-Ka-Levi/week3level3.html"
+    />
+    <meta
+      property="og:site_name"
+      content="Week 3 Level 3 (Weekly Mini Event kak Levi KelasFullstack.id)"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      user-scalable="no"
+    />
+    <title>Week 3 Level 3 (Weekly Mini Event kak Levi KelasFullstack.id)</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-image: url("https://i.ibb.co/mbHVq86/cyberpunk-5135622-1280.jpg");
+        --border-size: min(0.7dvw, 0.7dvh);
+      }
+      .original-theme {
+        --primary-color: #ffffff;
+        --secondary-color: #007bff;
+        --tertiary-color: rgba(0, 0, 0, 0.8);
+      }
+      .teal-theme {
+        --primary-color: #007bff;
+        --secondary-color: #0c7b93;
+        --tertiary-color: rgba(39, 73, 109, 0.8);
+      }
+      .purple-theme {
+        --primary-color: #ff00ff;
+        --secondary-color: #892cdc;
+        --tertiary-color: rgba(82, 5, 123, 0.8);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+        min-height: 100dvh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: max(100dvw, 178dvh);
+        background-image: var(--bg-image);
+        backdrop-filter: blur(max(0.45dvw, 0.8dvh));
+      }
+      h1 {
+        font-family: "Rubik Mono One", sans-serif;
+        font-weight: 300;
+        color: var(--primary-color);
+      }
+      p {
+        font-family: "Archivo", sans-serif;
+        font-weight: 100;
+        font-size: min(3dvh, 3dvw);
+        color: var(--primary-color);
+      }
+      .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: calc(100dvw - min(20dvh, 20dvw));
+        height: calc(100dvh - min(20dvh, 20dvw));
+        padding: min(5dvh, 5dvw);
+        box-sizing: border-box;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: max(100dvw, 178dvh);
+        background-image: var(--bg-image);
+        border: var(--border-size) solid var(--secondary-color);
+        border-radius: var(--border-size);
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      .theme-switch {
+        position: absolute;
+        top: min(2dvh, 2dvw);
+        left: min(10dvh, 10dvw);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: min(6dvh, 6dvw);
+        width: min(20dvh, 20dvw);
+        background-color: var(--tertiary-color);
+        border: var(--border-size) solid var(--secondary-color);
+        box-sizing: border-box;
+      }
+      .theme-switch input {
+        -webkit-appearance: none;
+        appearance: none;
+        height: min(3dvh, 3dvw);
+        width: 25%;
+        cursor: pointer;
+        background-color: var(--primary-color);
+      }
+      #front-page {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: top 1s, translate 1s;
+      }
+      #profile-toggle {
+        padding: min(1dvh, 1dvw);
+        font-size: min(2dvh, 2dvw);
+        font-family: "Rubik Mono One", sans-serif;
+        font-weight: 200;
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+        border: var(--border-size) solid var(--secondary-color);
+        border-radius: var(--border-size);
+        cursor: pointer;
+        transition: top 1s;
+      }
+      #profile-about {
+        position: relative;
+        width: min(65dvh, 65dvw);
+        transition: top 1s;
+      }
+      .profile-container h1 {
+        font-size: 6dvw;
+      }
+      .profile-container button {
+        font-size: 5dvw;
+      }
+      #portfolio-container {
+        position: relative;
+        margin-top: min(3dvw, 3dvh);
+        transition: top 1s;
+      }
+      #portfolio-container h1 {
+        font-size: min(3.7dvh, 3.7dvw);
+        border-bottom: min(0.7dvw, 0.7dvh) solid var(--primary-color);
+      }
+      .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .project-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: min(64dvw, max(calc(60dvh - 24dvw), 24dvw));
+        height: min(48dvw, max(calc(45dvh - 18dvw), 18dvw));
+        margin-top: min(3dvw, 3dvh);
+        box-sizing: border-box;
+        border: var(--border-size) solid var(--secondary-color);
+        border-radius: var(--border-size);
+        overflow: hidden;
+      }
+      .project-item img {
+        width: min(64dvw, max(calc(60dvh - 24dvw), 24dvw));
+        height: min(48dvw, max(calc(45dvh - 18dvw), 18dvw));
+        object-fit: cover;
+      }
+      .project-item figcaption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: min(2dvw, max(calc(1.875dvh - 0.75dvw), 0.75dvw));
+        box-sizing: border-box;
+        font-size: min(4dvw, max(calc(3.75dvh - 1.5dvw), 1.5dvw));
+        text-align: center;
+        font-family: "Archivo", sans-serif;
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+      }
+      .hidden {
+        top: 100%;
+      }
+      .show {
+        top: 0%;
+      }
+      #front-page.hidden {
+        translate: 0 -100%;
+      }
+      #front-page.show {
+        translate: 0;
+      }
+    </style>
+  </head>
+  <body class="original-theme">
+    <form class="theme-switch">
+      <input
+        type="radio"
+        name="color-theme"
+        value="original-theme"
+        class="original-theme"
+      />
+      <input
+        type="radio"
+        name="color-theme"
+        value="teal-theme"
+        class="teal-theme"
+      />
+      <input
+        type="radio"
+        name="color-theme"
+        value="purple-theme"
+        class="purple-theme"
+      />
+    </form>
+    <section class="wrapper">
+      <header id="front-page" class="hidden">
+        <article class="profile-container">
+          <h1>Lyandiff</h1>
+          <p>As a Junior Web Developer</p>
+        </article>
+        <button id="profile-toggle">Open Profile</button>
+      </header>
+      <p id="profile-about" class="hidden">
+        I have learned some programming languages including but not limited to
+        HTML, CSS, and JavaScript. And besides that, I like to code and make
+        such beautiful websites. There are some projects that I created, among
+        others are
+      </p>
+      <article id="portfolio-container" class="hidden">
+        <h1>My Personal Portfolio</h1>
+        <section class="project-list">
+          <figure class="project-item">
+            <a
+              href="https://pixabay.com/illustrations/building-lights-night-neon-6370515/"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/stp1yKB/building-6370515-640.jpg"
+                alt="Project Preview"
+              />
+            </a>
+            <figcaption>
+              <h2>Nama Project</h2>
+            </figcaption>
+          </figure>
+          <figure class="project-item">
+            <a
+              href="https://pixabay.com/vectors/woman-robot-cyberpunk-cyborg-retro-7107687/"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/2tFBQWq/woman-7107687-640.png"
+                alt="Project Preview"
+              />
+            </a>
+            <figcaption>
+              <h2>Nama Project</h2>
+            </figcaption>
+          </figure>
+          <figure class="project-item">
+            <a
+              href="https://pixabay.com/illustrations/samurai-cyberpunk-warrior-japanese-4836642/"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/XZyrCwt/samurai-4836642-640.jpg"
+                alt="Project Preview"
+              />
+            </a>
+            <figcaption>
+              <h2>Nama Project</h2>
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+    </section>
+    <script>
+      let elem = [...document.getElementsByClassName("hidden")];
+      let button = document.getElementById("profile-toggle");
+      function toggle() {
+        elem.forEach(x => {
+          x.classList.toggle("hidden");
+          x.classList.toggle("show");
+        });
+        button.textContent = elem[0].classList.contains("hidden")
+          ? "open profile"
+          : "back";
+      }
+      button.onclick = toggle;
+      [...document.getElementsByName("color-theme")].forEach(
+        x =>
+          (x.onclick = ({ target }) => {
+            document.body.classList = target.value;
+          })
+      );
+    </script>
+  </body>
+</html>
