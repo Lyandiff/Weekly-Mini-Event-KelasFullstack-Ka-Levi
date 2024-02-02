@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Weekly Mini Event KelasFullstack Minggu ke-4 (Horizontal Timeline)"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="canonical"
+      href="https://lyandiff.github.io/Weekly-Mini-Event-KelasFullstack-Ka-Levi/week4.html"
+    />
+    <meta
+      property="og:title"
+      content="Week 4 Horizontal Timeline (Weekly Mini Event kak Levi KelasFullstack.id)"
+    />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:description"
+      content="Weekly Mini Event KelasFullstack Minggu ke-4 (Horizontal Timeline)"
+    />
+    <meta property="og:image" content="https://i.ibb.co/60g0LnH/week4preview1.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Week 4 Horizontal Timeline" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:url"
+      content="https://lyandiff.github.io/Weekly-Mini-Event-KelasFullstack-Ka-Levi/week4.html"
+    />
+    <meta
+      property="og:site_name"
+      content="Week 4 Horizontal Timeline (Weekly Mini Event kak Levi KelasFullstack.id)"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      user-scalable="no"
+    />
+    <title>
+      Week 4 Horizontal Timeline (Weekly Mini Event kak Levi KelasFullstack.id)
+    </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+      #wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+      }
+      .container {
+        position: relative;
+        width: 100vw;
+      }
+      .container > h1 {
+        position: absolute;
+        top: 25vh;
+        left: 50%;
+        translate: -50% -50%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+      }
+      #scroll-wrapper {
+        position: relative;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      #scroll-wrapper > div {
+        scroll-snap-align: start;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+      }
+      .timeline {
+        position: absolute;
+        top: 50vh;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+      }
+      .container:first-child > .timeline {
+        left: 50%;
+        width: 50%;
+      }
+      .container:last-child > .timeline {
+        width: 50%;
+      }
+      .timeline-pointer {
+        position: absolute;
+        top: 0;
+        translate: -50% -37.5%;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+      }
+      .timeline-pointer:first-child {
+        left: 25%;
+      }
+      .timeline-pointer:last-child {
+        left: 75%;
+      }
+      .container:first-child > .timeline > .timeline-pointer {
+        left: 0;
+      }
+      .container:last-child > .timeline > .timeline-pointer {
+        left: 100%;
+      }
+      .history-card {
+        width: 250px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .history-card > h1 {
+        padding: 0 10px;
+        background-color: white;
+        color: blueviolet;
+        font-size: 25px;
+        display: flex;
+      }
+      .history-card > h1::before {
+        content: "";
+        flex: 1;
+        transform: skew(-50deg) translateX(-30px);
+        background-color: black;
+      }
+      .history-card > p {
+        padding: 10px;
+        border-right: 20px solid white;
+        box-sizing: border-box;
+        flex: 1;
+      }
+      .history-card.top {
+        position: absolute;
+        top: calc(40vh - 100px);
+        left: 25%;
+        translate: -50% 0;
+      }
+      .history-card.bottom {
+        position: absolute;
+        top: 60vh;
+        left: 75%;
+        translate: -50% 0;
+      }
+      .container:first-child > .history-card,
+      .container:last-child > .history-card {
+        position: absolute;
+        top: 60vh;
+        left: 50%;
+        translate: -50% 0;
+      }
+      footer {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scroll-wrapper">
+    </div>
+    <main id="wrapper">
+      <div class="container">
+        <h1>Sejarah JavaScript</h1>
+        <div class="timeline">
+          <div class="timeline-pointer"></div>
+        </div>
+        <div class="history-card bottom">
+          <h1>1995</h1>
+          <p>pertama kali dibuat oleh Brendan Eich</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="history-card top">
+          <h1>1997</h1>
+          <p>distandarisasi oleh ECMA dan ECMAscript 1 Rilis</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-pointer"></div>
+          <div class="timeline-pointer"></div>
+        </div>
+        <div class="history-card bottom">
+          <h1>1998 - 1999</h1>
+          <p>ECMAscript 2 dan 3 Rilis</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="history-card top">
+          <h1>2008</h1>
+          <p>ECMAscript 4 diajukan namun tidak pernah rilis</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-pointer"></div>
+          <div class="timeline-pointer"></div>
+        </div>
+        <div class="history-card bottom">
+          <h1>2009</h1>
+          <p>ECMAscript 5 rilis</p>
+        </div>
+      </div>
+      <div class="container">
+        <h1>dan masih terus berlanjut . . .</h1>
+        <div class="timeline">
+          <div class="timeline-pointer"></div>
+        </div>
+        <div class="history-card bottom">
+          <h1>2015</h1>
+          <p>ECMAscript 6 rilis</p>
+        </div>
+      </div>
+    </main>
+    <script>
+      let scrollWrapper = document.getElementById("scroll-wrapper");
+      let wrapper = document.getElementById("wrapper");
+      for (let i = 0; i < wrapper.children.length; i++) {
+        const div = document.createElement("div");
+        scrollWrapper.appendChild(div);
+      }
+      scrollWrapper.onscroll = () => {
+        wrapper.style.left =
+          "-" +
+          (scrollWrapper.scrollTop /
+            (scrollWrapper.scrollHeight - scrollWrapper.clientTop)) *
+            wrapper.clientWidth +
+          "px";
+      };
+    </script>
+  </body>
+</html>
